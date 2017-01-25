@@ -1,0 +1,131 @@
+/* MAIN */
+$light-grey: #f9f9f9;
+$primary-color: #841d1d;
+$dark-grey: #3d3d3d;
+$middle-grey: #919191;
+
+// IMPORTS
+
+@import "reset";
+@import "mixins";
+@import "grid";
+@import "sections";
+@import "forms";
+@import "typography";
+@import "buttons";
+
+// MAIN
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $dark-grey;
+}
+.wrapper {
+  background-color: $light-grey;
+}
+header {
+  height: 300px;
+  background-color: $primary-color;
+  background-image: url(../../images/header2.jpg);
+  background-position: center center;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  color: $light-grey;
+  p {
+    color: $light-grey;
+  }
+}
+
+// TOP GRID
+
+.featured__article {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $dark-grey;
+}
+
+// SECTION
+.section__content {
+  padding: 10px 20px;
+}
+.image-wrap__full-width {
+  width: 100%;
+  height: auto;
+}
+.image-wrap {
+  padding: 5px;
+}
+.image-wrap__caption {
+  text-align: center;
+  color: $primary-color;
+}
+.section__title {
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    color: $middle-grey;
+    padding-top: 0;
+  }
+  border-bottom: 5px solid $primary-color;
+}
+footer {
+  background-color: $primary-color;
+  border-top: 5px solid $dark-grey;
+  border-bottom: 5px solid $light-grey;
+  .footer__grid {
+    .small-box {
+      margin: 10px;
+      background-color: $light-grey;
+    }
+  }
+  .tagline {
+    text-align: center;
+    color: $middle-grey;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    flex-wrap: wrap;
+  }
+  .featured {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .small-box {
+    width: 75%;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  .footer__grid {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .small-box {
+    width: 100%;
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  .search {
+    display: none;
+  }
+  nav {
+    ul {
+      margin: 0 auto;
+    }
+  }
+}

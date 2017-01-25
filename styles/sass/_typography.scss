@@ -1,0 +1,30 @@
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6,  {
+  font-family: 'Overpass', sans-serif;
+}
+p, span, ul, ol, li, input {
+  font-family: 'Lato', sans-serif;
+  color: $dark-grey;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 4em;
+  color: $dark-grey;
+}
+h3 {
+  font-size: 2em;
+  color: $primary-color;
+  padding: 10px;
+}
+h4 {
+  font-size: 1.25em;
+}
+p {
+  padding: 10px;
+  line-height: 1.5
+}
+input {
+  color: $dark-grey;
+}
